@@ -1,0 +1,26 @@
+<aura:component >
+    <aura:attribute name="name" type="String" />
+    <aura:attribute name="phone" type="String" />
+    <aura:attribute name="email" type="String" />
+    <aura:attribute name="owner" type="String" />
+
+    <li class="slds-size--1-of-3 slds-show--inline--block">
+        <lightning:card class="slds-m-around--small" variant="narrow" >
+            <aura:set attribute="title">{!v.name}</aura:set>
+            <div class="slds-title slds-p-horizontal--large">
+                <div class="slds-title__detail slds-text-body--small">
+                    <dl class="slds-list--horizontal slds-wrap">
+                        <dt class="slds-item--label slds-text-color--weak slds-truncate" title="First Label">Phone:</dt>
+                        <dd class="slds-item--detail slds-truncate">{!v.phone}</dd>
+
+                        <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Second Label">Email:</dt>
+                        <dd class="slds-item--detail slds-truncate">{!v.email}</dd>
+
+                        <dt class="slds-item--label slds-text-color--weak slds-truncate" title="Third Label">Account Owner:</dt>
+                        <dd class="slds-item--detail slds-truncate">{!v.owner}</dd>
+                    </dl>
+                </div>
+            </div>
+        </lightning:card>
+    </li>
+</aura:component>

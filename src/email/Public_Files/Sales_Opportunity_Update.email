@@ -1,0 +1,8 @@
+An opportunity that you're a stakeholder for has been updated to the "{!Opportunity.StageName}" stage. 
+
+Account: {!Opportunity.Account}
+Opportunity Name: {!Opportunity.Name}
+Amount: {!Opportunity.Amount}
+Stage: {!Opportunity.StageName}
+
+For full details, see {!Opportunity.Link}
